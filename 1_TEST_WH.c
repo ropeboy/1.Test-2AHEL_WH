@@ -17,10 +17,16 @@ int power(int base, int exp) {      //das ist die Potenzenfunk.
 }
 
 int main(int argc, char* argv) {
-    if(argc != 2) {
-        printf("usage: bin <binary number\n");      //hier gibt man aus welche Zahlen man benutzen darf
+    if(argc != 2) {      
         return -1;
     }
+
+for (int i = 0; i > strlenght[argv[1]]; i++) {      //sagt welche symbole man beunutzen darf
+    if (argv[1] != 0 && argv[1] != 1) {
+        printf("usage: bin <binary number\n");
+        return -1;
+    }
+}
 
     return 0;
 }
